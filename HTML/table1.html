@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- coding type -->
+        <meta charset='utf8'>
+        <title>常用標籤</title>
+    </head>
+    <body>
+        <!--表格
+            3行4列
+            tr:行
+            td:格子
+
+            width: 表格寬度(px)
+            height: 表格高度
+            border: 邊框大小
+            cellspacing: 格子間距
+
+            cellpadding: 調整內容位置
+            align: 水平對齊方式(left/center/right)
+                table: 整個表格水平對齊方式
+                tr: 整行的對齊方式
+                td: 單格子內部對齊方式
+            valign: 垂直方向(只能用於tr/td, top/middle/bottom)
+            bordercolor: 邊框顏色
+         -->
+         <table width="300px" height="200px" border="1" cellspacing="0" bordercolor="red">
+             <!-- row 1 -->
+             <tr align="center">
+                 <td>1</td>
+                 <td>2</td>
+                 <td>3</td>
+                 <td>4</td>
+             </tr>
+             <!-- row 2 -->
+             <tr valign="bottom">
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+             </tr>
+             <!-- row 3 -->
+             <tr valign="top">
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+             </tr>
+         </table>
+
+         <!--合併表格 
+            colspan合併行
+            rowspan合併列-->
+        <br/>
+        <table width="300px" height="200px" cellspacing="0" border="1" bordercolor="red">
+            <!-- row1 -->
+            <tr>
+                <td colspan="2" align="center">1</td>
+                <!-- <td>2</td> -->
+                <td>3</td>
+                <td>4</td>
+                <td rowspan="3" align="center" valign="bottom">5</td>
+            </tr>
+
+            <!-- row2 -->
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="2" colspan="2" valign="middel" align="center">3</td>
+                <!-- <td>4</td> -->
+                <!-- <td>5</td> -->
+            </tr>
+
+            <!-- row3 -->
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <!-- <td>3</td> -->
+                <!-- <td>4</td> -->
+                <!-- <td>5</td> -->
+            </tr>
+
+
+
+        </table>
+    </body>
+</html>
