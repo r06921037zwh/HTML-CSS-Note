@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- 三種加入css方式
+    1.內連樣式表
+    2.內部樣式表
+    3.外部樣式表（導入方式分成 (1)style內 ＠import url() (2)style外 link  
+                兩種方式在(a.)加載順序 (b.)相容性 (c.)DOM操作 有所區別
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>intro to css</title>
+        <style>
+            /*css的註釋方式和C++相同*/
+            /*
+            div{
+                width: 100px;
+                height: 200px;
+                background: blue;
+            }
+            */
+        /*@import url("/home/zhewei/Desktop/HTML-CSS-Note/HTML/05-style.css")*/    
+        </style>
+        <link rel="stylesheet" href="/home/zhewei/Desktop/HTML-CSS-Note/HTML/05-style.css"/>
+    </head>
+
+    <body>
+        <!--1.內連樣式表 -->
+        <div style="width: 100px; height: 100px; background: red;"></div>
+        <!--2.內部樣式表:把style放在head裡面的<style></style>內 -->
+        <div></div>
+    </body>
+
+</html>

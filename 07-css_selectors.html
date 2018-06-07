@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>css_selector2</title>
+        <style>
+            /*共同title*/
+            .title{
+                background: grey;
+            }
+            /*不同view下面的title*/
+            .view1 .title{
+                color: blue;
+            }
+            .view2 .title{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="view1">
+            <h3 class="title">a nice pen</h3>
+            <p>a good eraser</p>
+        </div>
+
+        <div class="view2">
+            <h3 class="title">a nice man</h3>
+            <p>a good girl</p>
+        </div>
+    </body>
+</html>

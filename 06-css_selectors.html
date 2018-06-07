@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>css_selector1</title>
+        <style type="text/css">
+        /*1 元素選擇器
+        usage: element{}
+        */
+        p{
+            color: red;
+        }
+        h1{
+            background: orange;
+        }
+
+        /*2. 類別選擇器(class selector)，可以重複使用
+        usage: .class{} 
+        */
+        .happy{
+            color: blue;
+        }
+        .angry{
+            background: greenyellow;
+        }
+
+        /*3. ID選擇器(id selectors)，不能重複使用
+        usage: #id{}
+         */
+         #first{
+             color: purple;
+         }
+         #second{
+             background: grey;
+         }
+        </style>
+    </head>
+
+    <body>
+        <!--1. 使用類型選擇器 -->
+        <p>Hello</p>
+        <p>World</p>
+        <h1>Nice to meet you</h1>
+        <!--2. 使用類別選擇器 -->
+        <h1 class="happy">basic css</h1>
+        <h1 class="happy">tutorial</h1>
+        <p class="angry">keep going</p>
+        <!--3. 使用id選擇器 -->
+        <h2 id="first">look</h2>
+        <h2 id="second">overthere</h2>
+    </body>
+</html>

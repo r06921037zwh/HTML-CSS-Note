@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>css_selector3</title>
+        <style>
+            /* 權重順序遞減 */
+           #head{
+               background: purple;
+           }
+           .view{
+               background: red;
+           }
+           div{
+               background: blue;
+           }
+
+           /* 權重加成 */
+           .title{
+               color:white;
+           }
+           .view .title{
+               color: brown;
+           }
+           div .title{
+               color: blueviolet;
+           }
+        </style>
+    </head>
+    <body>
+       <div class="view" id="head">my class</div>
+       <div class="view1">
+           <p class="title">my new class</p>
+       </div>
+    </body>
+</html>
